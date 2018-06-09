@@ -2,7 +2,7 @@ var nebPay=require('nebpay')
 const _pay=new nebPay();
 
 const appAddress='n1m7FFcVrBZAbWn4bjvGFtC9gx5QbNxWghX'
-const price=0.0000001;
+const price=0.00000001;
 
 const pay=(cb)=>{
   _pay.call(appAddress,price,'payed',{},{
@@ -45,7 +45,11 @@ const init=()=>{
     if(playedTimes<1){
       initUi();
     }
-    pay(nick,initUi)
+    pay(nick,()=>{
+      localStorage.setItem('payed',1);
+
+      initUi();
+    })
   }
   
 }
