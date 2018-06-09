@@ -6,10 +6,10 @@ com.init = function (stype){
 	
 	com.nowStype= stype || com.getCookie("stype") ||"stype2";
 	var stype = com.stype[com.nowStype];
-	com.width			=	stype.width;		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	com.width			=	stype.width;		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 	com.height			=	stype.height; 		//ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
-	com.spaceX			=	stype.spaceX;		//ï¿½Åµï¿½Xï¿½ï¿½ï¿½
-	com.spaceY			=	stype.spaceY;		//ï¿½Åµï¿½Yï¿½ï¿½ï¿½
+	com.spaceX			=	stype.spaceX;		//ï¿½Åµï¿½Xï¿½ï¿½ï¿?
+	com.spaceY			=	stype.spaceY;		//ï¿½Åµï¿½Yï¿½ï¿½ï¿?
 	com.pointStartX		=	stype.pointStartX;	//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Åµï¿½Xï¿½ï¿½ï¿½ï¿½;
 	com.pointStartY		=	stype.pointStartY;	//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Åµï¿½Yï¿½ï¿½ï¿½ï¿½;
 	com.page			=	stype.page;			//Í¼Æ¬Ä¿Â¼
@@ -30,19 +30,19 @@ com.init = function (stype){
 //ï¿½ï¿½Ê½
 com.stype = {
 	stype1:{
-		width:325,		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		width:325,		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 		height:402, 		//ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
-		spaceX:35,		//ï¿½Åµï¿½Xï¿½ï¿½ï¿½
-		spaceY:36,		//ï¿½Åµï¿½Yï¿½ï¿½ï¿½
+		spaceX:35,		//ï¿½Åµï¿½Xï¿½ï¿½ï¿?
+		spaceY:36,		//ï¿½Åµï¿½Yï¿½ï¿½ï¿?
 		pointStartX:5,		//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Åµï¿½Xï¿½ï¿½ï¿½ï¿½;
 		pointStartY:19,		//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Åµï¿½Yï¿½ï¿½ï¿½ï¿½;
 		page:"stype_1"	//Í¼Æ¬Ä¿Â¼
 	},
 	stype2:{
-		width:530,		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		width:530,		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 		height:567, 		//ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
-		spaceX:57,		//ï¿½Åµï¿½Xï¿½ï¿½ï¿½
-		spaceY:57,		//ï¿½Åµï¿½Yï¿½ï¿½ï¿½
+		spaceX:57,		//ï¿½Åµï¿½Xï¿½ï¿½ï¿?
+		spaceY:57,		//ï¿½Åµï¿½Yï¿½ï¿½ï¿?
 		pointStartX:-2,		//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Åµï¿½Xï¿½ï¿½ï¿½ï¿½;
 		pointStartY:0,		//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Åµï¿½Yï¿½ï¿½ï¿½ï¿½;
 		page:"stype_2"	//Í¼Æ¬Ä¿Â¼
@@ -112,7 +112,7 @@ com.loadImages = function(stype){
 		com[i].img.src = "img/"+stype+"/"+ com.args[i].img +".png";
 	}
 	
-	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 	com.paneImg = new Image();
 	com.paneImg.src  = "img/"+stype+"/r_box.png";
 	
@@ -128,7 +128,7 @@ com.show = function (){
 	}
 }
 
-//ï¿½ï¿½Ê¾ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½Ê¾ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 com.showPane  = function (x,y,newX,newY){
 	com.pane.isShow=true;
 	com.pane.x= x ;
@@ -194,7 +194,7 @@ com.getCookie = function(name){
 	}
 	return false;
 }
-//ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½Â¡
+//ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½Â?
 com.arr2Clone = function (arr){
 	var newArr=[];
 	for (var i=0; i<arr.length ; i++){	
@@ -351,7 +351,7 @@ com.bylaw.c = function (x,y,map,my){
 			d.push([i,y])	
 		}
 	}
-	//ï¿½Ò²ï¿½ï¿½ï¿½ï¿½
+	//ï¿½Ò²ï¿½ï¿½ï¿½ï¿?
 	for (var i=x+1; i <= 8; i++){
 		if (map[y][i]) {
 			if (com.mans[map[y][i]].my!=my) d.push([i,y]);
@@ -408,22 +408,22 @@ com.bylaw.m = function (x,y,map,my){
 com.bylaw.x = function (x,y,map,my){
 	var d=[];
 	if (my===1){ //ï¿½ì·½
-		//4ï¿½ï¿½ï¿½
+		//4ï¿½ï¿½ï¿?
 		if ( y+2<= 9 && x+2<= 8 && !play.map[y+1][x+1] && (!com.mans[map[y+2][x+2]] || com.mans[map[y+2][x+2]].my!=my)) d.push([x+2,y+2]);
-		//7ï¿½ï¿½ï¿½
+		//7ï¿½ï¿½ï¿?
 		if ( y+2<= 9 && x-2>= 0 && !play.map[y+1][x-1] && (!com.mans[map[y+2][x-2]] || com.mans[map[y+2][x-2]].my!=my)) d.push([x-2,y+2]);
-		//1ï¿½ï¿½ï¿½
+		//1ï¿½ï¿½ï¿?
 		if ( y-2>= 5 && x+2<= 8 && !play.map[y-1][x+1] && (!com.mans[map[y-2][x+2]] || com.mans[map[y-2][x+2]].my!=my)) d.push([x+2,y-2]);
-		//10ï¿½ï¿½ï¿½
+		//10ï¿½ï¿½ï¿?
 		if ( y-2>= 5 && x-2>= 0 && !play.map[y-1][x-1] && (!com.mans[map[y-2][x-2]] || com.mans[map[y-2][x-2]].my!=my)) d.push([x-2,y-2]);
 	}else{
-		//4ï¿½ï¿½ï¿½
+		//4ï¿½ï¿½ï¿?
 		if ( y+2<= 4 && x+2<= 8 && !play.map[y+1][x+1] && (!com.mans[map[y+2][x+2]] || com.mans[map[y+2][x+2]].my!=my)) d.push([x+2,y+2]);
-		//7ï¿½ï¿½ï¿½
+		//7ï¿½ï¿½ï¿?
 		if ( y+2<= 4 && x-2>= 0 && !play.map[y+1][x-1] && (!com.mans[map[y+2][x-2]] || com.mans[map[y+2][x-2]].my!=my)) d.push([x-2,y+2]);
-		//1ï¿½ï¿½ï¿½
+		//1ï¿½ï¿½ï¿?
 		if ( y-2>= 0 && x+2<= 8 && !play.map[y-1][x+1] && (!com.mans[map[y-2][x+2]] || com.mans[map[y-2][x+2]].my!=my)) d.push([x+2,y-2]);
-		//10ï¿½ï¿½ï¿½
+		//10ï¿½ï¿½ï¿?
 		if ( y-2>= 0 && x-2>= 0 && !play.map[y-1][x-1] && (!com.mans[map[y-2][x-2]] || com.mans[map[y-2][x-2]].my!=my)) d.push([x-2,y-2]);
 	}
 	return d;
@@ -433,22 +433,22 @@ com.bylaw.x = function (x,y,map,my){
 com.bylaw.s = function (x,y,map,my){
 	var d=[];
 	if (my===1){ //ï¿½ì·½
-		//4ï¿½ï¿½ï¿½
+		//4ï¿½ï¿½ï¿?
 		if ( y+1<= 9 && x+1<= 5 && (!com.mans[map[y+1][x+1]] || com.mans[map[y+1][x+1]].my!=my)) d.push([x+1,y+1]);
-		//7ï¿½ï¿½ï¿½
+		//7ï¿½ï¿½ï¿?
 		if ( y+1<= 9 && x-1>= 3 && (!com.mans[map[y+1][x-1]] || com.mans[map[y+1][x-1]].my!=my)) d.push([x-1,y+1]);
-		//1ï¿½ï¿½ï¿½
+		//1ï¿½ï¿½ï¿?
 		if ( y-1>= 7 && x+1<= 5 && (!com.mans[map[y-1][x+1]] || com.mans[map[y-1][x+1]].my!=my)) d.push([x+1,y-1]);
-		//10ï¿½ï¿½ï¿½
+		//10ï¿½ï¿½ï¿?
 		if ( y-1>= 7 && x-1>= 3 && (!com.mans[map[y-1][x-1]] || com.mans[map[y-1][x-1]].my!=my)) d.push([x-1,y-1]);
 	}else{
-		//4ï¿½ï¿½ï¿½
+		//4ï¿½ï¿½ï¿?
 		if ( y+1<= 2 && x+1<= 5 && (!com.mans[map[y+1][x+1]] || com.mans[map[y+1][x+1]].my!=my)) d.push([x+1,y+1]);
-		//7ï¿½ï¿½ï¿½
+		//7ï¿½ï¿½ï¿?
 		if ( y+1<= 2 && x-1>= 3 && (!com.mans[map[y+1][x-1]] || com.mans[map[y+1][x-1]].my!=my)) d.push([x-1,y+1]);
-		//1ï¿½ï¿½ï¿½
+		//1ï¿½ï¿½ï¿?
 		if ( y-1>= 0 && x+1<= 5 && (!com.mans[map[y-1][x+1]] || com.mans[map[y-1][x+1]].my!=my)) d.push([x+1,y-1]);
-		//10ï¿½ï¿½ï¿½
+		//10ï¿½ï¿½ï¿?
 		if ( y-1>= 0 && x-1>= 3 && (!com.mans[map[y-1][x-1]] || com.mans[map[y-1][x-1]].my!=my)) d.push([x-1,y-1]);
 	}
 	return d;
@@ -473,7 +473,7 @@ com.bylaw.j = function (x,y,map,my){
 		if ( y+1<= 9  && (!com.mans[map[y+1][x]] || com.mans[map[y+1][x]].my!=my)) d.push([x,y+1]);
 		//ï¿½ï¿½
 		if ( y-1>= 7 && (!com.mans[map[y-1][x]] || com.mans[map[y-1][x]].my!=my)) d.push([x,y-1]);
-		//ï¿½Ï½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ï¿½Ï½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 		if ( com.mans["j0"].x == com.mans["J0"].x &&isNull) d.push([com.mans["J0"].x,com.mans["J0"].y]);
 		
 	}else{
@@ -481,7 +481,7 @@ com.bylaw.j = function (x,y,map,my){
 		if ( y+1<= 2  && (!com.mans[map[y+1][x]] || com.mans[map[y+1][x]].my!=my)) d.push([x,y+1]);
 		//ï¿½ï¿½
 		if ( y-1>= 0 && (!com.mans[map[y-1][x]] || com.mans[map[y-1][x]].my!=my)) d.push([x,y-1]);
-		//ï¿½Ï½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ï¿½Ï½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 		if ( com.mans["j0"].x == com.mans["J0"].x &&isNull) d.push([com.mans["j0"].x,com.mans["j0"].y]);
 	}
 	//ï¿½ï¿½
@@ -509,7 +509,7 @@ com.bylaw.p = function (x,y,map,my){
 			if(n==0) d.push([i,y])	
 		}
 	}
-	//ï¿½Ò²ï¿½ï¿½ï¿½ï¿½
+	//ï¿½Ò²ï¿½ï¿½ï¿½ï¿?
 	var n=0;
 	for (var i=x+1; i <= 8; i++){
 		if (map[y][i]) {
@@ -596,7 +596,7 @@ com.value = {
 		[194, 206, 204, 212, 200, 212, 204, 206, 194]
 	],
 	
-	//ï¿½ï¿½ï¿½Öµ
+	//ï¿½ï¿½ï¿½Ö?
 	m:[
 		[90, 90, 90, 96, 90, 96, 90, 90, 90],
 		[90, 96,103, 97, 94, 97,103, 96, 90],
@@ -611,7 +611,7 @@ com.value = {
 		[88, 85, 90, 88, 90, 88, 90, 85, 88]
 	],
 	
-	//ï¿½ï¿½ï¿½Öµ
+	//ï¿½ï¿½ï¿½Ö?
 	x:[
 		[0, 0,20, 0, 0, 0,20, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -672,7 +672,7 @@ com.value = {
 		[ 96,  96,  97, 99,  99, 99,  97,  96,  96]
 	],
 	
-	//ï¿½ï¿½ï¿½Öµ
+	//ï¿½ï¿½ï¿½Ö?
 	z:[
 		[ 9,  9,  9, 11, 13, 11,  9,  9,  9],
 		[19, 24, 34, 42, 44, 42, 34, 24, 19],
