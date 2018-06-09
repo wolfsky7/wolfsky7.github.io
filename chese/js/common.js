@@ -1,6 +1,7 @@
 
 
 var com = com||{};
+window.com=com;
 
 com.init = function (stype){
 	

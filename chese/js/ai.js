@@ -1,5 +1,6 @@
 
 var AI = AI||{};
+window.AI=AI;
 
 AI.historyTable	=	{};		//历史表
 

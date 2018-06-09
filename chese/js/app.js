@@ -1,11 +1,20 @@
+//base
+require("./common") 
+require("./play") 
+require("./ai") 
+require("./bill") 
+require("./gambit") 
+
+
 var nebPay=require('nebpay')
 const _pay=new nebPay();
 
 const appAddress='n1m7FFcVrBZAbWn4bjvGFtC9gx5QbNxWghX'
 const price=0.00000001;
+const goodid='chese-0'
 
-const pay=(cb)=>{
-  _pay.call(appAddress,price,'payed',{},{
+const pay=(nick,cb)=>{
+  _pay.call(appAddress,price,'payed',goodid,{
     listener:rs=>{
       if(rs&&rs.txhash){
         alert('支付成功 开始愉快的玩耍把')

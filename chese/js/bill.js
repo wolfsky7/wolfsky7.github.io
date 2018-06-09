@@ -1,6 +1,6 @@
-/*! 一叶孤舟 | qq:28701884 | 欢迎指教 */
 
 var bill = bill || {};
+window.bill=bill
 
 //初始化
 bill.init = function (){
