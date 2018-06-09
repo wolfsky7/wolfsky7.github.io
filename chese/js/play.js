@@ -325,8 +325,7 @@ play.showWin = function (my){
 	}
 
 	setTimeout(()=>{
-		com.init()
-		play.init()
+		com.finishedOne()
 	},2000)
 }
 
