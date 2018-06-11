@@ -37,6 +37,9 @@ const getRandom=(n)=>{
 }
 
 const init=()=>{
+  if (typeof webExtensionWallet === "undefined") {
+    alert('星云钱包环境未运行，请安装钱包插件')
+  }
   
   let nick=localStorage.getItem('nickName');
   if(!nick){
@@ -51,9 +54,14 @@ const init=()=>{
     initUi()
   }
   else{
-    if(playedTimes<1){
+    // if(playedTimes<1)
+    {
       initUi();
     }
+    
+  }
+
+  com.get('payMe').onclick=()=>{
     pay(nick,()=>{
       localStorage.setItem('payed',1);
 
