@@ -9,7 +9,7 @@ require("./gambit")
 var nebPay=require('nebpay')
 const _pay=new nebPay();
 
-const appAddress='n1m7FFcVrBZAbWn4bjvGFtC9gx5QbNxWghX'
+const appAddress='n1uwoCYTzM73VRCvkBQwAuyGScCvbQexk15'
 const price=0.00000001;
 const goodid='chese-0'
 
