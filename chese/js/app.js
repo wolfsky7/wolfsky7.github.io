@@ -81,4 +81,4 @@ const initUi=()=>{
   });
 }
 
-setTimeout(init,300);
+setTimeout(init,1000);
